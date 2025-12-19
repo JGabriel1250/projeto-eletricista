@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(/praticando/image/fundoazul.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main {
+    background-image: url(/praticando/image/trabalhador.jpg);
+}
