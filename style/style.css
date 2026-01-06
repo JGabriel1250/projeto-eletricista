@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@media (max-width: 768px) {
+  .secao-1 {
+    flex-direction: column;
+  }
+}
+
 @font-face {
     font-family: 'poppins';
     src: url(../font/Poppins-BoldItalic.ttf) format('opentype');
@@ -11,53 +17,7 @@
   font-style: normal;
 }
 
-.ibm-plex-mono-regular {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.ibm-plex-mono-medium {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.ibm-plex-mono-semibold {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.ibm-plex-mono-bold {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.ibm-plex-mono-regular-italic {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.ibm-plex-mono-medium-italic {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.ibm-plex-mono-semibold-italic {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.ibm-plex-mono-bold-italic {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 700;
-  font-style: italic;
-}
 
 body {
     margin: 0;
@@ -66,7 +26,7 @@ body {
 
 .topo-do-site {
     width: 100%;
-    height: 800px;
+    height: 600px;
     background-image: url(../img/banner.png);
     background-size: cover;
     background-position: center;
@@ -90,15 +50,9 @@ body {
     font-weight: bold;
 }
 
-hero {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.hero-copy {
-    max-width: 680px;
-    margin-left: 400px; 
+.container {
+  max-width: 90%;
+  margin-left: 18%;
 }
 
 .cor {
@@ -120,7 +74,35 @@ hero {
     background-image: linear-gradient(#3c3c3c, #010101);
 }
 
+/* Estilos de secao 1 */
 
+.secao-1 {
+  display: flex;
+  gap: 40px;
+}
 
+.grid11 {
+  flex: 1;
+}
 
+.grid-5 {
+  flex: 1;
+}
 
+.secao-1 h2 {
+  font-family: poppins, Arial;
+  font-size: 35px;
+  color: #3a4a92;
+  font-weight: bold;
+  margin-top: 110px;
+}
+
+.secao-1 p {
+  font-family: poppins, Arial;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.imagens-secao img {
+    margin-top: 220px;
+}
