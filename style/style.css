@@ -39,8 +39,9 @@ body {
 
 /* TOPO */
 .topo {
-  background: url(../img/banner.png) center/cover no-repeat;
-  padding: 150px 0;
+  background: url(../img/banner.png) no-repeat top center;
+  background-size: cover;
+  padding: 188px;
   color: white;
 }
 
@@ -56,24 +57,30 @@ body {
 }
 
 .topo p {
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: #feec00;
   font-weight: bold;
 }
 
 /* BOTÃO */
 .topo button {
-  padding: 15px 30px;
   border: none;
   background: linear-gradient(#00c3fa, #0060eb);
+  padding: 23px;
   color: white;
+  text-transform: uppercase;
   font-family: 'IBM Plex Mono', monospace;
-  font-weight: bold;
   cursor: pointer;
+  font-weight: bold;
   border-radius: 7px;
 }
 
-/* SEÇÕES */
+.botao:hover {
+  background: linear-gradient(#3c3c3c, #010101);
+}
+
+/* estilos secao 1 */
 .secao {
   padding: 80px 0;
 }
@@ -85,9 +92,11 @@ body {
 }
 
 .texto h2 {
-  font-size: 40px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
   color: #3a4a92;
-  margin-bottom: 20px;
 }
 
 .texto p {
@@ -104,7 +113,7 @@ body {
   justify-content: center;
 }
 
-/* SEÇÃO COM FUNDO */
+/* Estilos secao 2 */
 .fundo {
   background: url(../img/eletricista.png) no-repeat center center;
   background-size: cover;
@@ -126,22 +135,19 @@ body {
   max-width: 500px;
 }
 
+.tclaro h2{
+  font-family: 'IBM Plex Mono', monospace;
+  text-transform: uppercase;
+  font-size: 35px;
+  color:  white;
+  font-weight: bold;
+}
 
-.claro h2,
-.claro p {
+.tclaro p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
   color: white;
+  margin-top: 20px;
 }
 
-/* RESPONSIVO */
-@media (max-width: 768px) {
-  .linha {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .topo {
-    padding: 100px 0;
-    text-align: center;
-  }
-
-}
+/* Estilos da secao 3 */
